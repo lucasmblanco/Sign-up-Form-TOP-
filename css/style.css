@@ -1,0 +1,176 @@
+:root {
+    --color-font-title:#eec51d;
+    --color-background: #300223;
+    --title-font: 'Righteous', cursive;
+    --background-opacity: rgba(68,0,53,0.3);
+    --color-things:  #1b0044;
+    --form-accent-color: #76034c;
+    --second-color-accent: #3bd7e7 ;
+}
+
+body {
+    display: flex;
+    flex-direction: columns;
+}
+
+
+/*Banner side */
+
+header {
+    flex-grow: 2;
+}
+header>div#page-banner {
+    width: 30vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+     background-image: url('../media/volk_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    
+}
+
+header>div>div#logo-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: var(--background-opacity);
+    
+}
+
+header>div>div#logo-container>p {
+    font-family: var(--title-font);
+    font-size: 50px;
+    color: var(--color-font-title);
+}
+
+header>div>div#logo-container>img {
+    width: 50px;
+    height: 50px;
+}
+
+/* text and form side */
+
+main {
+    flex-grow: 1;
+}
+main>div#main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-background);
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main>div#main-content p {
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    font-size: 16px; 
+    padding: 10px;
+    padding-left: 30px;
+}
+
+main>div#main-content p>span {
+    color: var(--color-font-title)
+}
+
+main>div#main-content form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vh;
+    padding-left: 20px;
+}
+
+main>div#main-content form div {
+    padding: 2px; 
+    margin: 10px;
+}
+
+main>div#main-content form input {
+    width: 100%;
+    background-color: var(--color-background);
+    border:   var(--form-accent-color) solid 1px;
+    border-radius: 5px;
+    color: var(--text-font);
+}
+
+main>div#main-content form input:hover {
+    box-shadow: 0.1px 0.1px 10px var(--form-accent-color);
+}
+
+main>div#main-content form input:focus {
+    outline: 2px solid var(--form-accent-color);
+}
+
+main>div#main-content form label {
+    padding-bottom: 10px;
+    display: block;
+    font-size: 16px;
+    font-family:'Lexend', sans-serif;
+    color: var(--second-color-accent);
+}
+
+main>div#main-content form div>button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    
+    width: 200px;
+    height: 30px;
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+    color: var(--second-color-accent);
+    background-color: var(--color-background);
+    border-style: solid;
+    border-color:var(--second-color-accent);
+    border-radius: 5px;
+}
+
+main>div#main-content form div>button:hover {
+    box-shadow: 0.1px 0.1px 10px var(--second-color-accent);
+    background-color: var(--second-color-accent);
+    color: var(--color-background);
+}
+
+main>div#main-content div hr {
+    height: 1px;
+    border: 0;
+    background-color: var(--color-font-title);
+ }
+
+
+ main>div#main-content div p>a{
+    color: var(--color-font-title);
+    text-decoration: none;
+    text-shadow: 5px 5px 20px black;
+    padding: 5px;
+ }
+
+ main>div#main-content div p>a:hover {
+    text-shadow: 1px 1px 5px var(--color-font-title);
+}
+
+main>div#main-content p:nth-child(1) {
+    padding-bottom: 0;
+}
+
+main>div#main-content p:nth-child(2) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+main>div#main-content p:nth-child(3) {
+    padding-top: 0;
+}
+
+main>div#main-content p:nth-child(4) {
+    color: var(--color-font-title);
+}

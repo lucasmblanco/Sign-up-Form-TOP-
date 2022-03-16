@@ -5,7 +5,8 @@
     --background-opacity: rgba(68,0,53,0.3);
     --color-things:  #1b0044;
     --form-accent-color: #76034c;
-    --second-color-accent: #3bd7e7 ;
+    --second-color-accent: #3bd7e7;
+    --color-font:  #f0e1ea;
 }
 
 body {
@@ -71,7 +72,7 @@ main>div#main-content {
 
 main>div#main-content p {
     font-family: 'Lexend', sans-serif;
-    color: white;
+    color:var(--color-font);
     font-size: 16px; 
     padding: 10px;
     padding-left: 30px;
@@ -98,7 +99,7 @@ main>div#main-content form input {
     background-color: var(--color-background);
     border:   var(--form-accent-color) solid 1px;
     border-radius: 5px;
-    color: var(--text-font);
+    color: var(--color-font);
 }
 
 main>div#main-content form input:hover {
@@ -174,3 +175,4 @@ main>div#main-content p:nth-child(3) {
 main>div#main-content p:nth-child(4) {
     color: var(--color-font-title);
 }
+
